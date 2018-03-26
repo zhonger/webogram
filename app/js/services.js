@@ -4575,10 +4575,10 @@ angular.module('myApp.services', ['myApp.i18n', 'izhukov.utils'])
           }).then(function () {
             var popup
             try {
-              popup = window.open('https://web.telegram.org', '_blank')
+              popup = window.open('https://tele.shuosc.org', '_blank')
             } catch (e) {}
             if (!popup) {
-              location.href = 'https://web.telegram.org'
+              location.href = 'https://tele.shuosc.org'
             }
           }, function () {
             Storage.set({https_dismiss: tsNow()})
