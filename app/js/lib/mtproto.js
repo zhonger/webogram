@@ -8,7 +8,7 @@
 angular.module('izhukov.mtproto', ['izhukov.utils'])
 
   .factory('MtpDcConfigurator', function () {
-    var sslSubdomains = ['pluto', 'venus', 'aurora', 'vesta', 'flora']
+    var sslSubdomains = ['pluto', 'venus', 'aurora', 'vesta']
 
     var dcOptions = Config.Modes.test
       ? [
@@ -34,7 +34,7 @@ angular.module('izhukov.mtproto', ['izhukov.utils'])
         if (Config.Modes.ssl || !Config.Modes.http) {
           var subdomain = sslSubdomains[dcID - 1] + (upload ? '-1' : '')
           var path = Config.Modes.test ? 'apiw_test1' : 'apiw1'
-          chosenServer = 'https://' + subdomain + '.tele.luish.cc/' + path
+          chosenServer = 'https://' + subdomain + '.telegram.org/' + path
           return chosenServer
         }
 
