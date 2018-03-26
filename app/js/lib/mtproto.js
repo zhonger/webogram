@@ -8,7 +8,7 @@
 angular.module('izhukov.mtproto', ['izhukov.utils'])
 
   .factory('MtpDcConfigurator', function () {
-    var sslSubdomains = ['pluto', 'venus', 'aurora', 'vesta']
+    var sslSubdomains = ['pluto', 'venus', 'aurora', 'vesta', 'venus']
 
     var dcOptions = Config.Modes.test
       ? [
